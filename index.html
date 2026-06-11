@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--Links do CSS -->
+    <link rel="stylesheet" href="/assets/css/reset.css" />
+    <link rel="stylesheet" href="/assets/css/tokens.css" />
+    <link rel="stylesheet" href="/assets/css/home.css" />
+
+    <!-- Links das Fontes -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Gloock&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Link dos ícones -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css"
+    />
+
+    <title>Aeris</title>
+  </head>
+  <body>
+    <!-- Header -->
+
+    <header>
+      <span class="logo">Aeris</span>
+      <div class="profile">
+        <div class="avatar">M</div>
+        <span class="streak-badge"> 🔥 <span id="streak-count"></span></span>
+      </div>
+    </header>
+
+    <!-- Greeting -->
+
+    <section class="greeting">
+      <p>Boa tarde</p>
+      <h1>Matheus</h1>
+      <p id="greeting-message"></p>
+    </section>
+
+    <!-- Week -->
+
+    <section class="week">
+      <p>Semana Atual</p>
+      <div class="days">
+        <div class="day">
+          <div class="day-bar"></div>
+          <span>S</span>
+        </div>
+        <div class="day">
+          <div class="day-bar"></div>
+          <span>T</span>
+        </div>
+        <div class="day">
+          <div class="day-bar"></div>
+          <span>Q</span>
+        </div>
+        <div class="day">
+          <div class="day-bar"></div>
+          <span>Q</span>
+        </div>
+        <div class="day">
+          <div class="day-bar"></div>
+          <span>S</span>
+        </div>
+        <div class="day">
+          <div class="day-bar"></div>
+          <span>S</span>
+        </div>
+        <div class="day">
+          <div class="day-bar"></div>
+          <span>D</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Buttons -->
+
+    <button class="btn-initiate">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="16"
+        height="16"
+        viewBox="0 0 24 24"
+        fill="currentColor"
+      >
+        <path d="M8 5v14l11-7z" />
+      </svg>
+      Iniciar Treino
+    </button>
+
+    <!-- Cards -->
+
+    <section class="cards">
+      <div class="card card-workouts">
+        <p class="card-label">Treinos</p>
+        <div class="workout-row">
+          <div>
+            <span class="workout-tag">ÚLTIMO</span>
+            <span class="workout-name">Costas & Bíceps</span>
+            <span class="workout-meta">Ontem · 58 min</span>
+          </div>
+          <div class="workout-stat">
+            <span class="workout-stat-val">4820</span>
+            <span class="workout-stat-label">kg volume</span>
+          </div>
+        </div>
+        <div class="workout-row">
+          <div>
+            <span class="workout-tag">PRÓXIMO</span>
+            <span class="workout-name">Peito & Tríceps</span>
+            <span class="workout-meta">Hoje · Treino B</span>
+          </div>
+          <div class="workout-stat">
+            <span class="workout-stat-val">6</span>
+            <span class="workout-stat-label">exercícios</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="card card-prs">
+        <p class="card-label">Recordes Pessoais</p>
+        <div class="prs-grid">
+          <div class="pr-item">
+            <span class="pr-exercise">Supino Reto</span>
+            <span class="pr-val">100 <span class="pr-unit">kg</span></span>
+            <span class="pr-delta up">↑ +5kg</span>
+          </div>
+          <div class="pr-item">
+            <span class="pr-exercise">Agachamento</span>
+            <span class="pr-val">120 <span class="pr-unit">kg</span></span>
+            <span class="pr-delta up">↑ +2.5kg</span>
+          </div>
+          <div class="pr-item">
+            <span class="pr-exercise">Levantamento</span>
+            <span class="pr-val">140 <span class="pr-unit">kg</span></span>
+            <span class="pr-delta">— estável</span>
+          </div>
+          <div class="pr-item">
+            <span class="pr-exercise">Desenvolvimento</span>
+            <span class="pr-val">70 <span class="pr-unit">kg</span></span>
+            <span class="pr-delta up">↑ +2.5kg</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="card card-body">
+        <p class="card-label">Corpo</p>
+        <div class="body-stats">
+          <div class="body-item">
+            <span class="body-val">78.4</span>
+            <span class="body-label">kg</span>
+            <span class="body-delta">−0.6 esta semana</span>
+          </div>
+          <div class="body-item">
+            <span class="body-val">13.2</span>
+            <span class="body-label">% gordura</span>
+            <span class="body-delta">−0.3%</span>
+          </div>
+          <div class="body-item">
+            <span class="body-val">68</span>
+            <span class="body-label">kg massa</span>
+            <span class="body-delta">+0.2kg</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Navigation -->
+
+    <nav class="bottom-nav">
+      <a href="index.html" class="nav-item active">
+        <i class="ti ti-home"></i>
+        <span>Home</span>
+      </a>
+      <a href="pages/treino.html" class="nav-item">
+        <i class="ti ti-barbell"></i>
+        <span>Treino</span>
+      </a>
+      <a href="pages/progresso.html" class="nav-item">
+        <i class="ti ti-chart-line"></i>
+        <span>Progresso</span>
+      </a>
+      <a href="pages/perfil.html" class="nav-item">
+        <i class="ti ti-user"></i>
+        <span>Perfil</span>
+      </a>
+    </nav>
+  </body>
+</html>
